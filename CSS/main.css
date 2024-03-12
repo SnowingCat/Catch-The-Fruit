@@ -1,0 +1,67 @@
+body{
+    background-color: rgba(12, 239, 255, 0.731);
+}
+
+/* #start-menu{
+    position: relative;
+    background-color: rgba(36, 36, 36, 0.63);
+    padding: 600px;
+} */
+
+#title{
+    position: relative;
+    left: 600px;
+    top: 300px;
+}
+
+#buttons{
+    display: inline-block;
+    padding: 20px;
+    margin: 40px;
+}
+
+#btn-start{
+    position: relative;
+    left: 800px;
+    top: 500px;
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: wait;
+    font-size: 16px;
+}
+
+#btn-mode{
+    position: relative;
+    left: 800px;
+    top: 550px;
+    background-color: grey;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: not-allowed;
+    font-size: 16px;
+}
+
+#btn-repository{
+    position: relative;
+    left: 800px;
+    top: 600px;
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#en{
+    position: relative;
+    left: 0px;
+    top: 600px;
+    margin: 0px;
+}
