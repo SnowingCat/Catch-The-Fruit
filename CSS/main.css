@@ -20,7 +20,7 @@ body{
     margin: 40px;
 }
 
-#start{
+#btn-start{
     position: relative;
     left: 700px;
     top: 500px;
@@ -33,11 +33,11 @@ body{
     font-size: 16px;
 }
 
-#start:hover{
+#btn-start:hover{
     border: 3px solid rgb(82, 82, 255);
 }
 
-#mode{
+#btn-mode{
     position: relative;
     left: 575px;
     top: 550px;
@@ -50,11 +50,11 @@ body{
     font-size: 16px;
 }
 
-#mode:hover{
+#btn-mode:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
-#repository{
+#btn-repository{
     position: relative;
     left: 450px;
     top: 600px;
@@ -67,13 +67,13 @@ body{
     font-size: 16px;
 }
 
-#repository:hover{
+#btn-repository:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
 #lg{
     position: relative;
     left: 0px;
-    top: 470px;
+    top: 460px;
     margin: 0px;
 }
