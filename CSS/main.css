@@ -10,7 +10,7 @@ body{
 
 #title{
     position: relative;
-    left: 600px;
+    left: 555px;
     top: 300px;
 }
 
@@ -20,9 +20,9 @@ body{
     margin: 40px;
 }
 
-#btn-start{
+#start{
     position: relative;
-    left: 800px;
+    left: 700px;
     top: 500px;
     background-color: blue;
     color: white;
@@ -33,22 +33,30 @@ body{
     font-size: 16px;
 }
 
-#btn-mode{
+#start:hover{
+    border: 3px solid rgb(82, 82, 255);
+}
+
+#mode{
     position: relative;
-    left: 800px;
+    left: 575px;
     top: 550px;
     background-color: grey;
     color: white;
     height: 40px;
     width: 120px;
     border: none;
-    cursor: not-allowed;
+    cursor: pointer;
     font-size: 16px;
 }
 
-#btn-repository{
+#mode:hover{
+    border: 3px solid rgb(186, 185, 185);
+}
+
+#repository{
     position: relative;
-    left: 800px;
+    left: 450px;
     top: 600px;
     background-color: gray;
     color: white;
@@ -59,9 +67,13 @@ body{
     font-size: 16px;
 }
 
-#en{
+#repository:hover{
+    border: 3px solid rgb(186, 185, 185);
+}
+
+#lg{
     position: relative;
     left: 0px;
-    top: 600px;
+    top: 470px;
     margin: 0px;
 }
