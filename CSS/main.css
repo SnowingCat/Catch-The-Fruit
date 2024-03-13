@@ -2,11 +2,11 @@ body{
     background-color: rgba(12, 239, 255, 0.731);
 }
 
-/* #start-menu{
+#start-menu{
     position: relative;
     background-color: rgba(36, 36, 36, 0.63);
     padding: 600px;
-} */
+}
 
 #title{
     position: relative;
