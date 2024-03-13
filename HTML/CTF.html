@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
     <head>
         <meta charset="UTF-8">
         <title>Catch The Fruit</title>
         <link rel="stylesheet" href="../CSS/main.css">
+        <script src="../JS/main.js"></script>
     </head>
     <body>
-        <img src="../img/title.png" alt="Catch The Fruit" id="title">
         <script src="../JS/main.js"></script>
-            <div>
-                <button type="button" onclick="start()" id="btn-start"></button><!-- start -->
-                <button type="button" onclick="mode()" id="btn-mode"></button><!-- mode -->
-                <button type="button" onclick="repository()" id="btn-repository"></button><!-- repository -->
-            </div>
+        <div id="start-menu">
+            <img src="../img/title.png" alt="Catch The Fruit" id="title">
+            <form>
+                <div id="buttons">
+                    <button type="button" onclick="start()" id="btn-start">start</button>
+                    <button type="button" onclick="mode()" id="btn-mode">mode</button>
+                    <button type="button" onclick="repository()" id="btn-repository">repository</button>
+                    <button type="button" onclick="introduction()" id="btn-introduction">introduction</button>
+                </div>
+            </form>
+        </div>
+        <img src="../img/language/English.png" alt="English" id="lg" onclick="change_language()">
     </body>
 </html>
