@@ -26,7 +26,7 @@ function change_language() {
     if(flag){
         img.src = "../img/language/Chinese.png";
         start.innerText = "开始游戏";
-        mode.innerText = "游戏模式";
+        mode.innerText = "模式选择";
         repository.innerText = "项目地址";
         introduction.innerText = "游戏介绍";
         flag = false;
