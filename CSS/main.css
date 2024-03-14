@@ -2,14 +2,14 @@ body{
     background-color: rgba(12, 239, 255, 0.731);
 }
 
-/* #start-menu{
+#start-menu{
     position: absolute;
     background-color: rgba(36, 36, 36, 0.63);
     width: 1640px;
     height: 800px;
     padding: 0px;
     margin: 0px;
-} */
+}
 
 #title{
     position: absolute;
