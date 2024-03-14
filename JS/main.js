@@ -18,13 +18,24 @@ function introduction() {
 }
 
 function change_language() {
-    alert("转换语言在开发中...");
     var img = document.getElementById("lg");
+    var start = document.getElementById("btn_start");
+    var mode = document.getElementById("btn_mode");
+    var repository = document.getElementById("btn_repository");
+    var introduction = document.getElementById("btn_introduction");
     if(flag){
         img.src = "../img/language/Chinese.png";
+        start.innerText = "开始游戏";
+        mode.innerText = "游戏模式";
+        repository.innerText = "项目地址";
+        introduction.innerText = "游戏介绍";
         flag = false;
     }else{
         img.src = "../img/language/English.png";
+        start.innerText = "start";
+        mode.innerText = "mode";
+        repository.innerText = "repository";
+        introduction.innerText = "introduction";
         flag = true;
     }
 }

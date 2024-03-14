@@ -17,7 +17,7 @@ body{
     top: 300px;
 }
 
-#btn-start{
+#btn_start{
     position: absolute;
     left: 750px;
     top: 500px;
@@ -30,11 +30,11 @@ body{
     font-size: 16px;
 }
 
-#btn-start:hover{
+#btn_start:hover{
     border: 3px solid rgb(82, 82, 255);
 }
 
-#btn-mode{
+#btn_mode{
     position: absolute;
     left: 750px;
     top: 550px;
@@ -47,11 +47,11 @@ body{
     font-size: 16px;
 }
 
-#btn-mode:hover{
+#btn_mode:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
-#btn-repository{
+#btn_repository{
     position: absolute;
     left: 750px;
     top: 600px;
@@ -64,11 +64,11 @@ body{
     font-size: 16px;
 }
 
-#btn-repository:hover{
+#btn_repository:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
-#btn-introduction{
+#btn_introduction{
     position: absolute;
     left: 750px;
     top: 650px;
@@ -81,7 +81,7 @@ body{
     font-size: 16px;
 }
 
-#btn-introduction:hover{
+#btn_introduction:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
