@@ -38,8 +38,8 @@ body{
     position: absolute;
     left: 750px;
     top: 550px;
-    background-color: grey;
-    color: white;
+    background-color: white;
+    color: blue;
     height: 40px;
     width: 120px;
     border: none;
@@ -55,8 +55,8 @@ body{
     position: absolute;
     left: 750px;
     top: 600px;
-    background-color: gray;
-    color: white;
+    background-color: white;
+    color: blue;
     height: 40px;
     width: 120px;
     border: none;
@@ -72,8 +72,8 @@ body{
     position: absolute;
     left: 750px;
     top: 650px;
-    background-color: gray;
-    color: white;
+    background-color: white;
+    color: blue;
     height: 40px;
     width: 120px;
     border: none;
@@ -82,6 +82,23 @@ body{
 }
 
 #btn_introduction:hover{
+    border: 3px solid rgb(186, 185, 185);
+}
+
+#btn_setting{
+    position: absolute;
+    left: 750px;
+    top: 700px;
+    background-color: white;
+    color: blue;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn_setting:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
