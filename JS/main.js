@@ -38,7 +38,7 @@ function change_language() {
         mode.innerText = "mode";
         repository.innerText = "repository";
         introduction.innerText = "introduction";
-        setting.innerText = "游戏设置";
+        setting.innerText = "setting";
         flag = true;
     }
 }
