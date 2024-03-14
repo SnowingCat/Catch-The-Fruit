@@ -3,19 +3,22 @@ body{
 }
 
 /* #start-menu{
-    position: relative;
+    position: absolute;
     background-color: rgba(36, 36, 36, 0.63);
-    padding: 600px;
+    width: 1640px;
+    height: 800px;
+    padding: 0px;
+    margin: 0px;
 } */
 
 #title{
-    position: relative;
+    position: absolute;
     left: 555px;
     top: 300px;
 }
 
 #btn-start{
-    position: relative;
+    position: absolute;
     left: 750px;
     top: 500px;
     background-color: blue;
@@ -32,8 +35,8 @@ body{
 }
 
 #btn-mode{
-    position: relative;
-    left: 625px;
+    position: absolute;
+    left: 750px;
     top: 550px;
     background-color: grey;
     color: white;
@@ -49,8 +52,8 @@ body{
 }
 
 #btn-repository{
-    position: relative;
-    left: 500px;
+    position: absolute;
+    left: 750px;
     top: 600px;
     background-color: gray;
     color: white;
@@ -66,8 +69,8 @@ body{
 }
 
 #btn-introduction{
-    position: relative;
-    left: 375px;
+    position: absolute;
+    left: 750px;
     top: 650px;
     background-color: gray;
     color: white;
@@ -83,8 +86,8 @@ body{
 }
 
 #lg{
-    position: relative;
+    position: absolute;
     left: 0px;
-    top: 580px;
+    bottom: 0px;
     margin: 0px;
 }
