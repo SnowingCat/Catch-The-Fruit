@@ -2,13 +2,18 @@ body{
     background-color: rgba(12, 239, 255, 0.731);
 }
 
-#start-menu{
+#start_menu{
     position: absolute;
     background-color: rgba(36, 36, 36, 0.63);
-    width: 1640px;
-    height: 800px;
-    padding: 0px;
-    margin: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+#buttons{
+    position: absolute;
 }
 
 #title{
@@ -43,7 +48,6 @@ body{
     height: 40px;
     width: 120px;
     border: none;
-    cursor: pointer;
     font-size: 16px;
 }
 
@@ -60,7 +64,6 @@ body{
     height: 40px;
     width: 120px;
     border: none;
-    cursor: pointer;
     font-size: 16px;
 }
 
@@ -77,7 +80,6 @@ body{
     height: 40px;
     width: 120px;
     border: none;
-    cursor: pointer;
     font-size: 16px;
 }
 
@@ -94,7 +96,6 @@ body{
     height: 40px;
     width: 120px;
     border: none;
-    cursor: pointer;
     font-size: 16px;
 }
 
@@ -108,3 +109,8 @@ body{
     bottom: 0px;
     margin: 0px;
 }
+
+/* #basket{
+    position: absolute;
+    bottom: 0px;
+} */
