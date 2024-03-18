@@ -2,14 +2,13 @@ body{
     background-color: rgba(12, 239, 255, 0.731);
 }
 
-#start_menu{
+#menu{
     position: absolute;
     background-color: rgba(36, 36, 36, 0.63);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
 }
 
 #buttons{
@@ -30,8 +29,8 @@ body{
     color: white;
     height: 40px;
     width: 120px;
-    border: none;
     cursor: wait;
+    border: none;
     font-size: 16px;
 }
 
@@ -110,6 +109,29 @@ body{
     margin: 0px;
 }
 
+#introduction{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    color: white;
+    z-index: 0;
+}
+
+#btn_back{
+    position: absolute;
+    left: 100px;
+    top: 800px;
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-size: 16px;
+}
+
+#btn_back:hover{
+    border: 3px solid rgb(82, 82, 255);
+}
 /* #basket{
     position: absolute;
     bottom: 0px;

@@ -5,14 +5,14 @@ function repository() {
 }
 
 function start() {
-    var start_menu = document.getElementById("start_menu");
-    var title = document.getElementById("title");
-    var buttons = document.getElementById("buttons");
-    var lg = document.getElementById("lg");//获取开始界面元素
-    start_menu.style.display = "none";
-    title.style.display = "none";
-    buttons.style.display = "none";
-    lg.style.display = "none";//隐藏开始界面元素
+    // var start_menu = document.getElementById("menu");
+    // var title = document.getElementById("title");
+    // var buttons = document.getElementById("buttons");
+    // var lg = document.getElementById("lg");//获取开始界面元素
+    // start_menu.style.display = "none";
+    // title.style.display = "none";
+    // buttons.style.display = "none";
+    // lg.style.display = "none";//隐藏开始界面元素
     alert("游戏正在开发中...")
 }
 
@@ -21,16 +21,14 @@ function mode() {
 }
 
 function introduction() {
-    var start_menu = document.getElementById("start_menu");
     var title = document.getElementById("title");
     var buttons = document.getElementById("buttons");
-    var lg = document.getElementById("lg");
     var h1 = document.getElementById("introduction");
-    start_menu.style.display = "none";
+    var back = document.getElementById("btn_back");
     title.style.display = "none";
-    buttons.style.display = "none";
-    lg.style.display = "none";//隐藏开始界面元素
+    buttons.style.display = "none";//隐藏开始界面元素
     h1.style.display = "block";
+    back.style.display = "block";
 }
 
 function change_language() {//中英文转换
@@ -41,7 +39,7 @@ function change_language() {//中英文转换
     var introduction = document.getElementById("btn_introduction");
     var setting = document.getElementById("btn_setting"); 
     var h1 = document.getElementById("introduction")
-    var back = document.getElementById("btn-back")//获取所有的元素
+    var back = document.getElementById("btn_back")//获取所有的元素
     if(flag1){//切换中文
         img.src = "../img/language/Chinese.png";
         start.innerText = "开始游戏";
@@ -67,4 +65,17 @@ function change_language() {//中英文转换
 
 function setting() {
     alert("还在开发中...")
+}
+
+function back() {
+    var title = document.getElementById("title");
+    var buttons = document.getElementById("buttons");
+    var h1 = document.getElementById("introduction");
+    var back = document.getElementById("btn_back");
+    title.style.display = "block";
+    buttons.style.display = "block";
+    //需要显示的元素
+    h1.style.display = "none";
+    back.style.display = "none";
+    //需要隐藏的元素
 }
