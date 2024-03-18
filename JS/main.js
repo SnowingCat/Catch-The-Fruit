@@ -5,14 +5,20 @@ function repository() {
 }
 
 function start() {
-    // var start_menu = document.getElementById("menu");
-    // var title = document.getElementById("title");
-    // var buttons = document.getElementById("buttons");
-    // var lg = document.getElementById("lg");//获取开始界面元素
-    // start_menu.style.display = "none";
-    // title.style.display = "none";
-    // buttons.style.display = "none";
-    // lg.style.display = "none";//隐藏开始界面元素
+    var start_menu = document.getElementById("menu");
+    var title = document.getElementById("title");
+    var buttons = document.getElementById("buttons");
+    var lg = document.getElementById("lg");   
+    //获取需要隐藏的元素
+    var pause = document.getElementById("pause"); 
+    //获取需要显示的元素
+    start_menu.style.display = "none";
+    title.style.display = "none";
+    buttons.style.display = "none";
+    lg.style.display = "none";
+    //需要隐藏的元素
+    pause.style.display = "block";
+    //需要显示的元素
     alert("游戏正在开发中...")
 }
 
@@ -82,7 +88,7 @@ function setting() {
     alert("还在开发中...")
 }
 
-function back() {
+function btn_back() {
     var title = document.getElementById("title");
     var buttons = document.getElementById("buttons");
     //获取需要显示的元素
@@ -101,5 +107,36 @@ function back() {
 
 function pause()
 {
-    
+    var pause_menu = document.getElementById("menu");
+    var title = document.getElementById("pause_title");
+    var back = document.getElementById("back");
+    var go_on = document.getElementById("come_on")
+    var restart = document.getElementById("restart");
+    //获取需要显示的元素
+    var pause = document.getElementById("pause");
+    pause.style.display = "none";
+    //隐藏暂停键
+    pause_menu.style.display = "block";
+    title.style.display = "block";
+    back.style.display = "block";
+    go_on.style.display = "block";
+    restart.style.display = "block";
+    //暂停时显示所需元素
+}
+
+function back(){
+    var pause_menu = document.getElementById("menu");
+    var title = document.getElementById("pause_title");
+    var back = document.getElementById("back");
+    var go_on = document.getElementById("come_on")
+    var restart = document.getElementById("restart");
+    var lg = document.getElementById("lg");
+    pause_menu.style.display = "none";
+    title.style.display = "none";
+    back.style.display = "none";
+    go_on.style.display = "none";
+    restart.style.display = "none";
+    lg.style.display = "block";
+    btn_back()
+
 }
