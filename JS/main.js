@@ -24,6 +24,15 @@ function start() {
 
 function mode() {
     alert("正在开发中...")
+    var title = document.getElementById("title");
+    var buttons = document.getElementById("buttons");
+    var h1 = document.getElementById("mode");
+    var back = document.getElementById("btn_back");
+    title.style.display = "none";
+    buttons.style.display = "none";
+    //需要隐藏的元素
+    h1.style.display = "block";
+    back.style.display = "block";
 }
 
 function introduction() {
@@ -42,34 +51,37 @@ function introduction() {
 function change_language() {//中英文转换
     var img = document.getElementById("lg");
     var start = document.getElementById("btn_start");
-    var mode = document.getElementById("btn_mode");
+    var btn_mode = document.getElementById("btn_mode");
     var repository = document.getElementById("btn_repository");
     var introduction = document.getElementById("btn_introduction");
     var setting = document.getElementById("btn_setting"); 
     var h1_1 = document.getElementById("introduction")
     var h1_2 = document.getElementById("setting")
-    var back = document.getElementById("btn_back")//获取所有的元素
+    var back = document.getElementById("btn_back")
+    var mode = document.getElementById("mode")//获取所有的元素
     if(flag1){//切换中文
         img.src = "../img/language/Chinese.png";
         start.innerText = "开始游戏";
-        mode.innerText = "模式选择";
+        btn_mode.innerText = "模式选择";
         repository.innerText = "项目地址";
         introduction.innerText = "游戏介绍";
         setting.innerText = "游戏设置";
         h1_1.innerText = "游戏介绍";
         h1_2.innerText = "游戏设置";
         back.innerText = "返回";
+        mode.innerText = "模式选择";
         flag1 = false;
     }else{//切换英文
         img.src = "../img/language/English.png";
         start.innerText = "start";
-        mode.innerText = "mode";
+        btn_mode.innerText = "mode";
         repository.innerText = "repository";
         introduction.innerText = "introduction";
         setting.innerText = "setting";
         h1_1.innerText = "Introduction";
         h1_2.innerText = "Setting";
         back.innerText = "back";
+        mode.innerText = "mode";
         flag1 = true;
     }
 }
@@ -94,6 +106,7 @@ function btn_back() {
     //获取需要显示的元素
     var h1_1 = document.getElementById("introduction");
     var h1_2 = document.getElementById("setting");
+    var h1_3 = document.getElementById("mode");
     var back = document.getElementById("btn_back");
     //获取需要隐藏的元素
     title.style.display = "block";
@@ -101,6 +114,7 @@ function btn_back() {
     //需要显示的元素
     h1_1.style.display = "none";
     h1_2.style.display = "none";
+    h1_3.style.display = "none";
     back.style.display = "none";
     //需要隐藏的元素
 }
@@ -125,17 +139,20 @@ function pause()
 }
 
 function back(){
-    var title = document.getElementById("pause_title");
+    var pause_title = document.getElementById("pause_title");
     var back = document.getElementById("back");
     var go_on = document.getElementById("come_on")
     var restart = document.getElementById("restart");
-    var lg = document.getElementById("lg");
     var basket = document.getElementById("basket");
-    title.style.display = "none";
+    var title = document.getElementById("title");
+    var buttons = document.getElementById("buttons");
+    var lg = document.getElementById("lg");
+    pause_title.style.display = "none";
     back.style.display = "none";
     go_on.style.display = "none";
     restart.style.display = "none";
     basket.style.display = "none";
     lg.style.display = "block";
-    btn_back()
+    title.style.display = "block";
+    buttons.style.display = "block"
 }

@@ -28,6 +28,18 @@ body{
     top: 300px;
 }
 
+#btn_back{
+    left: 100px;
+    top: 800px;
+}
+
+#btn_start{
+    left: 750px;
+    top: 500px;
+    cursor: wait;
+}
+
+/* 蓝色按钮共有属性 */
 #btn_start,
 #btn_back{
     position: absolute;
@@ -39,24 +51,21 @@ body{
     font-size: 16px;
 }
 
+/* 蓝色按钮共有经过属性 */
 #btn_start:hover,
 #btn_back:hover{
     border: 3px solid rgb(82, 82, 255);
 }
 
-#btn_start{
-    left: 750px;
-    top: 500px;
-    cursor: wait;
-}
-
+/* 白色按钮共有经过属性 */
 #btn_mode:hover,
 #btn_repository:hover,
 #btn_introduction:hover,
 #btn_setting:hover{
     border: 3px solid rgb(186, 185, 185);
-}
+} 
 
+/* 白色按钮共有属性 */
 #btn_repository,
 #btn_introduction,
 #btn_setting,
@@ -94,36 +103,16 @@ body{
     margin: 0px;
 }
 
-#introduction{
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 50px;
-    color: white;
-    z-index: 0;
-}
-
+#introduction,
+#setting,
 #mode{
     display: block;
     position: absolute;
     left: 100px;
     top: 50px;
+    font-size: 50px;
     color: white;
     z-index: 0;
-}
-
-#setting{
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 50px;
-    color: white;
-    z-index: 0;
-}
-
-#btn_back{
-    left: 100px;
-    top: 800px;
 }
 
 #pause_title{
