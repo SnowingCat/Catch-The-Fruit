@@ -28,15 +28,13 @@ body{
     top: 300px;
 }
 
-#btn_start{
+#btn_start,
+#btn_back{
     position: absolute;
-    left: 750px;
-    top: 500px;
     background-color: blue;
     color: white;
     height: 40px;
     width: 120px;
-    cursor: wait;
     border: none;
     font-size: 16px;
 }
@@ -46,16 +44,10 @@ body{
     border: 3px solid rgb(82, 82, 255);
 }
 
-#btn_mode{
-    position: absolute;
+#btn_start{
     left: 750px;
-    top: 550px;
-    background-color: white;
-    color: blue;
-    height: 40px;
-    width: 120px;
-    border: none;
-    font-size: 16px;
+    top: 500px;
+    cursor: wait;
 }
 
 #btn_mode:hover,
@@ -65,10 +57,12 @@ body{
     border: 3px solid rgb(186, 185, 185);
 }
 
-#btn_repository{
+#btn_repository,
+#btn_introduction,
+#btn_setting,
+#btn_mode{
     position: absolute;
     left: 750px;
-    top: 600px;
     background-color: white;
     color: blue;
     height: 40px;
@@ -76,42 +70,22 @@ body{
     border: none;
     font-size: 16px;
 }
-/* 
-#btn_repository:hover{
-    border: 3px solid rgb(186, 185, 185);
-} */
+
+#btn_repository{
+    top: 600px;
+}
 
 #btn_introduction{
-    position: absolute;
-    left: 750px;
     top: 650px;
-    background-color: white;
-    color: blue;
-    height: 40px;
-    width: 120px;
-    border: none;
-    font-size: 16px;
 }
-
-/* #btn_introduction:hover{
-    border: 3px solid rgb(186, 185, 185);
-} */
 
 #btn_setting{
-    position: absolute;
-    left: 750px;
     top: 700px;
-    background-color: white;
-    color: blue;
-    height: 40px;
-    width: 120px;
-    border: none;
-    font-size: 16px;
 }
 
-/* #btn_setting:hover{
-    border: 3px solid rgb(186, 185, 185);
-} */
+#btn_mode{
+    top: 550px;
+}
 
 #lg{
     position: absolute;
@@ -148,20 +122,9 @@ body{
 }
 
 #btn_back{
-    position: absolute;
     left: 100px;
     top: 800px;
-    background-color: blue;
-    color: white;
-    height: 40px;
-    width: 120px;
-    border: none;
-    font-size: 16px;
 }
-
-/* #btn_back:hover{
-    border: 3px solid rgb(82, 82, 255);
-} */
 
 #pause_title{
     position: relative;
