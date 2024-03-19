@@ -18,7 +18,8 @@ body{
 }
 
 #buttons{
-    position: absolute;
+    margin: auto;
+    width: 50%;
 }
 
 #title{
@@ -40,7 +41,8 @@ body{
     font-size: 16px;
 }
 
-#btn_start:hover{
+#btn_start:hover,
+#btn_back:hover{
     border: 3px solid rgb(82, 82, 255);
 }
 
@@ -56,7 +58,10 @@ body{
     font-size: 16px;
 }
 
-#btn_mode:hover{
+#btn_mode:hover,
+#btn_repository:hover,
+#btn_introduction:hover,
+#btn_setting:hover{
     border: 3px solid rgb(186, 185, 185);
 }
 
@@ -71,10 +76,10 @@ body{
     border: none;
     font-size: 16px;
 }
-
+/* 
 #btn_repository:hover{
     border: 3px solid rgb(186, 185, 185);
-}
+} */
 
 #btn_introduction{
     position: absolute;
@@ -88,9 +93,9 @@ body{
     font-size: 16px;
 }
 
-#btn_introduction:hover{
+/* #btn_introduction:hover{
     border: 3px solid rgb(186, 185, 185);
-}
+} */
 
 #btn_setting{
     position: absolute;
@@ -104,9 +109,9 @@ body{
     font-size: 16px;
 }
 
-#btn_setting:hover{
+/* #btn_setting:hover{
     border: 3px solid rgb(186, 185, 185);
-}
+} */
 
 #lg{
     position: absolute;
@@ -116,6 +121,7 @@ body{
 }
 
 #introduction{
+    display: block;
     position: absolute;
     left: 100px;
     top: 50px;
@@ -124,6 +130,7 @@ body{
 }
 
 #mode{
+    display: block;
     position: absolute;
     left: 100px;
     top: 50px;
@@ -132,6 +139,7 @@ body{
 }
 
 #setting{
+    display: block;
     position: absolute;
     left: 100px;
     top: 50px;
@@ -151,9 +159,9 @@ body{
     font-size: 16px;
 }
 
-#btn_back:hover{
+/* #btn_back:hover{
     border: 3px solid rgb(82, 82, 255);
-}
+} */
 
 #pause_title{
     position: relative;
@@ -162,7 +170,17 @@ body{
     top: 500px;
     left: 600px;
 }
-/* #basket{
+
+#back{
+    position: absolute;
+    color: white;
+    top: 450px;
+    left: 100px;
+    font-weight: 500;
+}
+#basket{
     position: absolute;
     bottom: 0px;
-} */
+    top: 100%;
+    left: auto;
+}

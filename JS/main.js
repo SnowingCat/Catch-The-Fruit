@@ -125,18 +125,17 @@ function pause()
 }
 
 function back(){
-    var pause_menu = document.getElementById("menu");
     var title = document.getElementById("pause_title");
     var back = document.getElementById("back");
     var go_on = document.getElementById("come_on")
     var restart = document.getElementById("restart");
     var lg = document.getElementById("lg");
-    pause_menu.style.display = "none";
+    var basket = document.getElementById("basket");
     title.style.display = "none";
     back.style.display = "none";
     go_on.style.display = "none";
     restart.style.display = "none";
+    basket.style.display = "none";
     lg.style.display = "block";
     btn_back()
-
 }
