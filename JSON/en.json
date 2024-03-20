@@ -1,0 +1,19 @@
+{
+    "btn_start":"Start",
+    "btn_mode":"Mode",
+    "btn_repository":"Repository",
+    "btn_introduction":"Introduction",
+    "btn_setting":"Setting",
+    "h1_introduction":"Introduction",
+    "h1_setting":"Setting",
+    "h1_mode":"Mode",
+    "btn_back_1":"Back",
+    "pause":"Pause",
+    "p_back":"Back",
+    "p_continue":"Continue",
+    "p_restart":"Restart",
+    "score":"Score",
+    "final_score":"Your score is ",
+    "btn_back_2":"Back",
+    "btn_quit":"Quit"
+}
