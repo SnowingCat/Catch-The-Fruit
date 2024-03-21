@@ -144,8 +144,8 @@ function back(){
     var go_on = document.getElementById("come_on")
     var restart = document.getElementById("restart");
     var basket = document.getElementById("basket");
-    var title = document.getElementById("title");
-    var buttons = document.getElementById("buttons");
+    // var title = document.getElementById("title");
+    // var buttons = document.getElementById("buttons");
     var lg = document.getElementById("lg");
     pause_title.style.display = "none";
     back.style.display = "none";
@@ -153,6 +153,22 @@ function back(){
     restart.style.display = "none";
     basket.style.display = "none";
     lg.style.display = "block";
-    title.style.display = "block";
-    buttons.style.display = "block"
+    btn_back();
+    // title.style.display = "block";
+    // buttons.style.display = "block";
+}
+
+function restart(){
+
+}
+
+function come_on() {
+    var pause_title = document.getElementById("pause_title");
+    var back = document.getElementById("back");
+    var go_on = document.getElementById("come_on")
+    var restart = document.getElementById("restart");
+    pause_title.style.display = "none";
+    back.style.display = "none";
+    go_on.style.display = "none";
+    restart.style.display = "none";
 }

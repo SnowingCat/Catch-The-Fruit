@@ -1,0 +1,43 @@
+{
+    "English":
+    {
+        "btn_start":"Start",
+        "btn_mode":"Mode",
+        "btn_repository":"Repository",
+        "btn_introduction":"Introduction",
+        "btn_setting":"Setting",
+        "h1_introduction":"Introduction",
+        "h1_setting":"Setting",
+        "h1_mode":"Mode",
+        "btn_back_1":"Back",
+        "pause":"Pause",
+        "p_back":"Back",
+        "p_continue":"Continue",
+        "p_restart":"Restart",
+        "score":"Score",
+        "final_score":"Your score is ",
+        "btn_back_2":"Back",
+        "btn_quit":"Quit"
+    },
+    "Chinese":
+    {
+        "lang":"Chinese",
+        "btn_start":"开始游戏",
+        "btn_mode":"模式选择",
+        "btn_repository":"项目地址",
+        "btn_introduction":"游戏介绍",
+        "btn_setting":"游戏设置",
+        "h1_introduction":"游戏介绍",
+        "h1_setting":"游戏设置",
+        "h1_mode":"模式选择",
+        "btn_back_1":"返回",
+        "pause":"暂停",
+        "p_back":"返回",
+        "p_continue":"继续",
+        "p_restart":"重新开始",
+        "score":"得分",
+        "final_score":"最终得分是:",
+        "btn_back_2":"返回",
+        "btn_quit":"退出"
+    }
+}

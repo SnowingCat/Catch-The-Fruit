@@ -123,16 +123,40 @@ body{
     left: 600px;
 }
 
-#back{
+#back,
+#restart,
+#come_on{
+    font-weight: 500;
     position: absolute;
     color: white;
+}
+
+#back{
     top: 450px;
     left: 100px;
-    font-weight: 500;
 }
+
+#restart{
+    top: 450px;
+    left: 150px;
+}
+
+#come_on{
+    top: 450px;
+    left: 200px;
+}
+
 #basket{
     position: absolute;
     bottom: 0px;
     top: 100%;
     left: auto;
+}
+
+#score{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    button: 100%;
+    right: 0;
 }
