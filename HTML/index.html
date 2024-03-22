@@ -6,18 +6,16 @@
     </head>
     <body>
         <script src="../JS/main.js"></script>
-        <!-- <script src="../JSON/en.json"></script> -->
-        <div id="menu"></div>
-        <img src="../img/title.png" alt="Catch The Fruit" id="title">
-        <form>
-            <div id="buttons">
-                <button type="button" onclick="start()" id="btn_start">start</button>
-                <button type="button" onclick="mode()" id="btn_mode">mode</button>
-                <button type="button" onclick="repository()" id="btn_repository">repository</button>
-                <button type="button" onclick="introduction()" id="btn_introduction">introduction</button>
-                <button type="button" onclick="setting()" id="btn_setting">setting</button>
-            </div>
-        </form>
+        <div id="menu">
+            <img src="../img/title.png" alt="Catch The Fruit" id="title">
+            <form id="buttons">
+                    <button type="button" onclick="start()" id="btn_start" data-JSON="btn_start">start</button>
+                    <button type="button" onclick="mode()" id="btn_mode" data-JSON="btn_mode">mode</button>
+                    <button type="button" onclick="repository()" id="btn_repository" data-JSON="btn_repository">repository</button>
+                    <button type="button" onclick="introduction()" id="btn_introduction" data-JSON="btn_introduction">introduction</button>
+                    <button type="button" onclick="setting()" id="btn_setting" data-JSON="btn_setting">setting</button>
+            </form>
+        </div>
         <!-- 开始菜单 -->
         <img src="../img/language/English.png" alt="English" id="lg" onclick="change_language()">
         <!-- 切换语言 -->
@@ -30,13 +28,19 @@
         <button type="button" onclick="btn_back()" id="btn_back" style="display: none;">back</button>
         <!-- Setting Mode Introduction 的返回按钮 -->
         <img src="../img/fruit-default/default_pause.png" id="pause" alt="pause" style="display: none;" onclick="pause()">
-        <h1 id="pause_title" style="display: none;">Pause</h1>
-        <p id="back" style="display: none;" onclick="back()">Back</p>
-        <p id="restart" style="display: none;" onclick="restart()">Restart</p>
-        <p id="come_on" style="display: none;" onclick="come_on()">Continue</p>
-        <!-- 最上面一段为pause(暂停)界面 -->
+        <div>
+                <div>
+                    <h1 id="pause_title" style="display: none;">Pause</h1>
+                </div>
+                <div>
+                    <p id="back" style="display: none;" onclick="back()">Back</p>
+                    <p id="restart" style="display: none;" onclick="restart()">Restart</p>
+                    <p id="come_on" style="display: none;" onclick="come_on()">Continue</p>
+                </div>
+            </div>
+            <!-- 最上面一段为pause(暂停)界面 -->
         <!-- <img src="../img/fruit-default/basket.png" id="basket" style="display: none"> -->
-        <p id="score" style="display: none">SCORE:</p>
+        <p id="score" style="display: none">SCORE:{score}</p>
         <!-- 游戏界面 -->
     </body>
 </html>

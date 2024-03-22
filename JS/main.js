@@ -1,4 +1,7 @@
 var flag1 = true; //控制中英文转换的变量
+const Mode_Default = 1, Mode_Highscore = 2, Mode_Countdown = 3; //游戏模式
+const Theme_Default = 1, Theme_Winter = 2, Theme_Fruit = 3; //游戏主题
+var Game_Control = false;  //控制游戏是否开始的变量
 
 function repository() {
     window.open("https://github.com/SnowingCat/Catch-The-Fruit",'target');//跳转至个人仓库
@@ -10,7 +13,8 @@ function start() {
     var buttons = document.getElementById("buttons");
     var lg = document.getElementById("lg");   
     //获取需要隐藏的元素
-    var pause = document.getElementById("pause"); 
+    var pause = document.getElementById("pause");
+    var score = document.getElementById("score") 
     //获取需要显示的元素
     start_menu.style.display = "none";
     title.style.display = "none";
@@ -18,7 +22,9 @@ function start() {
     lg.style.display = "none";
     //需要隐藏的元素
     pause.style.display = "block";
+    score.style.display = "block";
     //需要显示的元素
+    Game_Control = true;
     alert("游戏正在开发中...")
 }
 
@@ -124,12 +130,14 @@ function pause()
     var pause_menu = document.getElementById("menu");
     var title = document.getElementById("pause_title");
     var back = document.getElementById("back");
-    var go_on = document.getElementById("come_on")
+    var go_on = document.getElementById("come_on");
     var restart = document.getElementById("restart");
+    var score = document.getElementById("score");
     //获取需要显示的元素
     var pause = document.getElementById("pause");
     pause.style.display = "none";
-    //隐藏暂停键
+    score.style.display = "none";
+    //隐藏
     pause_menu.style.display = "block";
     title.style.display = "block";
     back.style.display = "block";
@@ -141,34 +149,56 @@ function pause()
 function back(){
     var pause_title = document.getElementById("pause_title");
     var back = document.getElementById("back");
-    var go_on = document.getElementById("come_on")
+    var go_on = document.getElementById("come_on");
     var restart = document.getElementById("restart");
-    var basket = document.getElementById("basket");
-    // var title = document.getElementById("title");
-    // var buttons = document.getElementById("buttons");
+    // var basket = document.getElementById("basket");
+    var title = document.getElementById("title");
+    var buttons = document.getElementById("buttons");
     var lg = document.getElementById("lg");
     pause_title.style.display = "none";
     back.style.display = "none";
     go_on.style.display = "none";
     restart.style.display = "none";
-    basket.style.display = "none";
+    // basket.style.display = "none";
     lg.style.display = "block";
-    btn_back();
-    // title.style.display = "block";
-    // buttons.style.display = "block";
+    title.style.display = "block";
+    buttons.style.display = "block";
 }
 
 function restart(){
-
+    var pause_title = document.getElementById("pause_title");
+    var back = document.getElementById("back");
+    var go_on = document.getElementById("come_on");
+    var restart = document.getElementById("restart");
+    var pause_menu = document.getElementById("menu");
+    var pause = document.getElementById("pause")
+    var score = document.getElementById("score");
+    pause_menu.style.display = "none";
+    pause_title.style.display = "none";
+    back.style.display = "none";
+    go_on.style.display = "none";
+    restart.style.display = "none";
+    //需要隐藏的元素
+    pause.style.display = "block";
+    score.style.display = "block";
+    //需要显示的元素
 }
 
 function come_on() {
     var pause_title = document.getElementById("pause_title");
     var back = document.getElementById("back");
-    var go_on = document.getElementById("come_on")
+    var go_on = document.getElementById("come_on");
     var restart = document.getElementById("restart");
+    var pause_menu = document.getElementById("menu");
+    var pause = document.getElementById("pause");
+    var score = document.getElementById("score");
+    pause_menu.style.display = "none";
     pause_title.style.display = "none";
     back.style.display = "none";
     go_on.style.display = "none";
     restart.style.display = "none";
+    //需要隐藏的元素
+    pause.style.display = "block";
+    score.style.display = "block";
+    //需要显示的元素
 }
