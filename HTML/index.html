@@ -27,20 +27,31 @@
             <!-- Mode的界面设置 -->
         <button type="button" onclick="btn_back()" id="btn_back" style="display: none;">back</button>
         <!-- Setting Mode Introduction 的返回按钮 -->
-        <img src="../img/fruit-default/default_pause.png" id="pause" alt="pause" style="display: none;" onclick="pause()">
         <div>
-                <div>
-                    <h1 id="pause_title" style="display: none;">Pause</h1>
-                </div>
-                <div>
-                    <p id="back" style="display: none;" onclick="back()">Back</p>
-                    <p id="restart" style="display: none;" onclick="restart()">Restart</p>
-                    <p id="come_on" style="display: none;" onclick="come_on()">Continue</p>
-                </div>
+            <img src="../img/fruit-default/default_pause.png" id="pause" alt="pause" style="display: none;" onclick="pause()">
+            <div>
+                    <div>
+                        <h1 id="pause_title" style="display: none;">Pause</h1>
+                    </div>
+                    <div>
+                        <p id="back" style="display: none;" onclick="back()">Back</p>
+                        <p id="restart" style="display: none;" onclick="restart()">Restart</p>
+                        <p id="come_on" style="display: none;" onclick="come_on()">Continue</p>
+                    </div>
             </div>
             <!-- 最上面一段为pause(暂停)界面 -->
-        <!-- <img src="../img/fruit-default/basket.png" id="basket" style="display: none"> -->
-        <p id="score" style="display: none">SCORE:{score}</p>
-        <!-- 游戏界面 -->
+            <div>
+                <!-- 游戏界面 -->
+                <!-- <img src="../img/fruit-default/basket.png" id="basket" style="display: none"> -->
+                <p id="score" style="display: none">SCORE:{score}</p>
+            </div>
+            <div>
+                <img src="../img/gameover.png" id="end" alt="Game_over" style="display: none">
+                <botton type="button" onclick="restart()" id="btn_restart" style="display: none">restart</botton>
+                <button type="button" onclick="btn_back()" id="game_back" style="display: none">back</button>
+                <button type="button" onclick="repository()" id="game_repository" data-JSON="btn_repository" style="display: none">repository</button>
+                <!-- 游戏结束界面 -->
+            </div>
+        </div>
     </body>
 </html>
