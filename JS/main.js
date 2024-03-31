@@ -3,17 +3,18 @@ const Mode_Default = 1, Mode_Special = 2, Mode_Countdown = 3; //游戏模式
 const Theme_Default = 1, Theme_Winter = 2, Theme_Fruit = 3, Theme_Weather = 4; //游戏主题
 var Game_Control = false;  //控制游戏是否开始的变量
 var left = 37, right = 39, speed = 16;//左键，右键，加速键
-var page = 0; //当前页面
+var page = 1; //当前页面
 
 function page_back()
 {
-    page += 1;
+    page -= 1;
 }
 
 function page_next()
 {
-    page -= 1;
+    page += 1;
 }
+
 function repository() {
     window.open("https://github.com/SnowingCat/Catch-The-Fruit",'target');//跳转至个人仓库
 }
@@ -53,7 +54,6 @@ function mode() {
 }
 
 function introduction() {
-    page = 1;
     var title = document.getElementById("title");
     var buttons = document.getElementById("buttons");
     var h1 = document.getElementById("introduction");
@@ -96,6 +96,8 @@ function introduction() {
             document.getElementById("in_page4").style.display = "none";
             document.getElementById("in_page5").style.display = "block";
             break;
+        default:
+            alert("error");
     }
 }
 
@@ -175,7 +177,7 @@ function btn_back() {
     document.getElementById("page_back").style.display = "none";
     document.getElementById("page_next").style.display = "none";
     //需要隐藏的元素
-    page = 0;
+    page = 1;
 }
 
 function pause()

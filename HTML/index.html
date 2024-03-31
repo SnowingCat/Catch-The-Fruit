@@ -21,9 +21,9 @@
         <!-- 开始菜单 -->
         <img src="../img/language/English.png" alt="English" id="lg" onclick="change_language()">
         <!-- 切换语言 -->
-        <div class="page">
-            <div id="page_back" onclick="page_back()" style="display: none">&lt;&lt;back</div>
-            <div id="page_next" onclick="page_next()" style="display: none">&gt;&gt;next</div>
+        <div id="page">
+            <button type="button" id="page_back" onclick="page_back()" style="display: none">&lt;&lt;back</button>
+            <button type="button" id="page_next" onclick="page_next()" style="display: none">&gt;&gt;next</button>
         </div>
         <!-- 上下翻页 -->
         <div>
@@ -32,16 +32,16 @@
             <div class="para">
                 <div id="in_page1" style="display: none">
                     This is a game called Catch The Fruit.
-                    <br>
+                    </br>
                     In this game , the fruit will dope from the sky.
                     There is a basket on the ground. You need use the basket to catch the fruit.
                     Catch the fruit as many as you can.
                     If your HP == 0 or the time is over , the game is over.
-                    <br>
+                    </br>
                     Lose fruit or catch bombs will lose your HP.(fruit -5 , bomb -40)
                     You can get some HP by catching fruits or recover HP tool.(fruit +1, HP +20)
                     In Countdown mode , you can catch clock tool to recover countdown time.
-                    <br>
+                    </br>
                     Good Luck!
                 </div>
                 <div id="in_page2" style="display: none">
@@ -73,7 +73,7 @@
                 </div>
                 <div id="in_page5" style="display: none">
                     <p class="title">Theme</p>
-                    Four theme, default , real , weather , winter.
+                    Four themes, default , real , weather , winter.
                     You can change the theme in the setting page.
                 </div>
             </div>
