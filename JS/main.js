@@ -149,7 +149,6 @@ function introduction() {
         default:
             alert("error");
     }
-<<<<<<< HEAD
 }
 
 function setting() {
@@ -164,8 +163,6 @@ function setting() {
     back.style.display = "block";
     //需要显示的元素
     alert("还在开发中...")
-=======
->>>>>>> f9e7cbca863b55bac62d956e40d51324dd2d7bbb
 }
 
 function change_language() {//中英文转换
@@ -230,11 +227,7 @@ function btn_back() {
     document.getElementById("page_back").style.display = "none";
     document.getElementById("page_next").style.display = "none";
     //需要隐藏的元素
-<<<<<<< HEAD
-    return page = 1;
-=======
     page = 1;
->>>>>>> f9e7cbca863b55bac62d956e40d51324dd2d7bbb
 }
 
 function pause()
