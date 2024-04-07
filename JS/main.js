@@ -1,7 +1,33 @@
 var flag1 = true; //控制中英文转换的变量
-const Mode_Default = 1, Mode_Highscore = 2, Mode_Countdown = 3; //游戏模式
-const Theme_Default = 1, Theme_Winter = 2, Theme_Fruit = 3; //游戏主题
+const Mode_Default = 1, Mode_Special = 2, Mode_Countdown = 3; //游戏模式
+const Theme_Default = 1, Theme_Winter = 2, Theme_Fruit = 3, Theme_Weather = 4; //游戏主题
 var Game_Control = false;  //控制游戏是否开始的变量
+var left = 37, right = 39, speed = 16;//左键，右键，加速键
+var page = 1; //当前页面
+
+function page_back()
+{
+    if (document.getElementById("introduction")) {
+        introduction();
+    }else if (document.getElementById("Mode")){
+        mode();
+    }else if (document.getElementById("setting")){
+        setting();
+    }//检测是哪个页面
+    page -= 1;
+}
+
+function page_next()
+{
+    if (document.getElementById("introduction")) {
+        introduction();
+    }else if (document.getElementById("Mode")){
+        mode();
+    }else if (document.getElementById("setting")){
+        setting();
+    }//检测是哪个页面
+    page += 1;
+}
 
 function repository() {
     window.open("https://github.com/SnowingCat/Catch-The-Fruit",'target');//跳转至个人仓库
@@ -28,6 +54,42 @@ function start() {
     alert("游戏正在开发中...")
 }
 
+// function show() {
+//     if (document.getElementById("introduction")){
+//         var title = document.getElementById("title");
+//         var buttons = document.getElementById("buttons");
+//         var h1 = document.getElementById("introduction");
+//         var back = document.getElementById("btn_back");
+//         var page_back = document.getElementById("page_back");
+//         var page_next = document.getElementById("page_next");
+//         title.style.display = "none";
+//         buttons.style.display = "none";
+//         //需要隐藏的元素
+//         h1.style.display = "block";
+//         back.style.display = "block";
+//     }else if (document.getElementById("mode")){
+//         var title = document.getElementById("title");
+//         var buttons = document.getElementById("buttons");
+//         var h1 = document.getElementById("mode");
+//         var back = document.getElementById("btn_back");
+//         title.style.display = "none";
+//         buttons.style.display = "none";
+//         //需要隐藏的元素
+//         h1.style.display = "block";
+//         back.style.display = "block";
+//     }else if (document.getElementById("setting")){
+//         var title = document.getElementById("title");
+//         var buttons = document.getElementById("buttons");
+//         var h1 = document.getElementById("setting");
+//         var back = document.getElementById("btn_back");
+//         title.style.display = "none";
+//         buttons.style.display = "none";
+//         //需要隐藏的元素
+//         h1.style.display = "block";
+//         back.style.display = "block";
+//     }//将其他按钮显示的方法搬了过来
+// }
+
 function mode() {
     alert("正在开发中...")
     var title = document.getElementById("title");
@@ -46,12 +108,61 @@ function introduction() {
     var buttons = document.getElementById("buttons");
     var h1 = document.getElementById("introduction");
     var back = document.getElementById("btn_back");
+    var page_back = document.getElementById("page_back");
+    var page_next = document.getElementById("page_next");
     title.style.display = "none";
     buttons.style.display = "none";
     //需要隐藏的元素
     h1.style.display = "block";
     back.style.display = "block";
     //需要显示的元素
+    switch (page){
+        case 1:
+            page_back.style.display = "none";
+            page_next.style.display = "block";
+            document.getElementById("in_page1").style.display = "block";
+            document.getElementById("in_page2").style.display = "none";
+            break;
+        case 2:
+            page_back.style.display = "block";
+            document.getElementById("in_page1").style.display = "none";
+            document.getElementById("in_page2").style.display = "block";
+            document.getElementById("in_page3").style.display = "none";
+            break;
+        case 3:
+            document.getElementById("in_page2").style.display = "none";
+            document.getElementById("in_page3").style.display = "block";
+            document.getElementById("in_page4").style.display = "none";
+            break;
+        case 4:
+            page_next.style.display = "block";
+            document.getElementById("in_page3").style.display = "none";
+            document.getElementById("in_page4").style.display = "block";
+            document.getElementById("in_page5").style.display = "none";
+            break;
+        case 5:
+            page_back.style.display = "block";
+            page_next.style.display = "none";
+            document.getElementById("in_page4").style.display = "none";
+            document.getElementById("in_page5").style.display = "block";
+            break;
+        default:
+            alert("error");
+    }
+}
+
+function setting() {
+    var title = document.getElementById("title");
+    var buttons = document.getElementById("buttons");
+    var h1 = document.getElementById("setting");
+    var back = document.getElementById("btn_back");
+    title.style.display = "none";
+    buttons.style.display = "none";
+    //需要隐藏的元素
+    h1.style.display = "block";
+    back.style.display = "block";
+    //需要显示的元素
+    alert("还在开发中...")
 }
 
 function change_language() {//中英文转换
@@ -92,20 +203,6 @@ function change_language() {//中英文转换
     }
 }
 
-function setting() {
-    var title = document.getElementById("title");
-    var buttons = document.getElementById("buttons");
-    var h1 = document.getElementById("setting");
-    var back = document.getElementById("btn_back");
-    title.style.display = "none";
-    buttons.style.display = "none";
-    //需要隐藏的元素
-    h1.style.display = "block";
-    back.style.display = "block";
-    //需要显示的元素
-    alert("还在开发中...")
-}
-
 function btn_back() {
     var title = document.getElementById("title");
     var buttons = document.getElementById("buttons");
@@ -122,7 +219,15 @@ function btn_back() {
     h1_2.style.display = "none";
     h1_3.style.display = "none";
     back.style.display = "none";
+    document.getElementById("in_page1").style.display = "none";
+    document.getElementById("in_page2").style.display = "none";
+    document.getElementById("in_page3").style.display = "none";
+    document.getElementById("in_page4").style.display = "none";
+    document.getElementById("in_page5").style.display = "none";
+    document.getElementById("page_back").style.display = "none";
+    document.getElementById("page_next").style.display = "none";
     //需要隐藏的元素
+    return page = 1;
 }
 
 function pause()
@@ -202,3 +307,14 @@ function come_on() {
     score.style.display = "block";
     //需要显示的元素
 }
+
+// function press_key(event)//输入键
+// {
+//     var x = event.which || event.keyCode;
+//
+// }
+// function change_key(key, event)//改变键位
+// {
+//     var x = event.which || event.keyCode;
+//     key = x;
+// }

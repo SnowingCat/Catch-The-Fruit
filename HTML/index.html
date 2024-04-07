@@ -8,21 +8,79 @@
         <script src="../JS/main.js"></script>
         <div id="menu">
             <img src="../img/title.png" alt="Catch The Fruit" id="title">
-            <form id="buttons">
-                    <button type="button" onclick="start()" id="btn_start" data-JSON="btn_start">start</button>
-                    <button type="button" onclick="mode()" id="btn_mode" data-JSON="btn_mode">mode</button>
-                    <button type="button" onclick="repository()" id="btn_repository" data-JSON="btn_repository">repository</button>
-                    <button type="button" onclick="introduction()" id="btn_introduction" data-JSON="btn_introduction">introduction</button>
-                    <button type="button" onclick="setting()" id="btn_setting" data-JSON="btn_setting">setting</button>
-            </form>
+            <div id="buttons">
+                <form>
+                        <button type="button" onclick="start()" id="btn_start" data-JSON="btn_start">start</button>
+                        <button type="button" onclick="mode()" id="btn_mode" data-JSON="btn_mode">mode</button>
+                        <button type="button" onclick="repository()" id="btn_repository" data-JSON="btn_repository">repository</button>
+                        <button type="button" onclick="introduction()" id="btn_introduction" data-JSON="btn_introduction">introduction</button>
+                        <button type="button" onclick="setting()" id="btn_setting" data-JSON="btn_setting">setting</button>
+                </form>
+            </div>
         </div>
         <!-- 开始菜单 -->
         <img src="../img/language/English.png" alt="English" id="lg" onclick="change_language()">
         <!-- 切换语言 -->
-        <div id="introduction" style="display: none;">Introduction</div>
+        <div id="page">
+            <button type="button" id="page_back" onclick="page_back()" style="display: none">&lt;&lt;back</button>
+            <button type="button" id="page_next" onclick="page_next()" style="display: none">&gt;&gt;next</button>
+        </div>
+        <!-- 上下翻页 -->
+        <div>
             <!-- Introduction的界面设置 -->
+            <div id="introduction" style="display: none;">Introduction</div>
+            <div class="para">
+                <div id="in_page1" style="display: none">
+                    This is a game called Catch The Fruit.
+                    </br>
+                    In this game , the fruit will dope from the sky.
+                    There is a basket on the ground. You need use the basket to catch the fruit.
+                    Catch the fruit as many as you can.
+                    If your HP == 0 or the time is over , the game is over.
+                    </br>
+                    Lose fruit or catch bombs will lose your HP.(fruit -5 , bomb -40)
+                    You can get some HP by catching fruits or recover HP tool.(fruit +1, HP +20)
+                    In Countdown mode , you can catch clock tool to recover countdown time.
+                    </br>
+                    Good Luck!
+                </div>
+                <div id="in_page2" style="display: none">
+                    <p class="title">Control</p>
+                    Use the left and right arrow key to move the basket.
+                    Shift can speed up the basket.
+                    Space can pause the game.
+                    Esc can quit the game.
+                </div>
+                <div id="in_page3" style="display: none">
+                    <p class="title">Mode</p>
+                    There are three modes in this game.
+                    Default mode is the normal mode.
+                    Special mode has more special tools and bomb.
+                    Countdown mode is same as Special, but it has a countdown time (3min).
+                </div>
+                <div id="in_page4" style="display: none">
+                    <p class="title">Special Tools</p>
+                    Bomb can make you lose 40 HP or cut 10 sec.
+                    double can get double gain.(10sec.)
+                    clock can recover 15 sec.
+                    HP can recover 20HP.
+                    Ice can make the next 10 sec. slower.
+                    Magnet can get all the fruits and buff tool in the screen.
+                    Crazy will throw much fruit from the two sides.(10 sec.)
+                    Shield can defend a bomb.
+                    Speed can make your basket move faster.(10sec.)
+                    Eazy can nake your basket longer or make the fruit and tools smaller.(10sec.)
+                </div>
+                <div id="in_page5" style="display: none">
+                    <p class="title">Theme</p>
+                    Four themes, default , real , weather , winter.
+                    You can change the theme in the setting page.
+                </div>
+            </div>
+        </div>
         <div id="setting" style="display: none;">Setting</div>
             <!-- Setting的界面设置 -->
+        </div>
         <div id="mode" style="display: none;">Mode</div>
             <!-- Mode的界面设置 -->
         <button type="button" onclick="btn_back()" id="btn_back" style="display: none;">back</button>
@@ -43,20 +101,16 @@
             <div>
                 <!-- 游戏界面 -->
                 <!-- <img src="../img/fruit-default/basket.png" id="basket" style="display: none"> -->
-                <p id="score" style="display: none">SCORE:{score}</p>
+                <p id="score" style="display: none;">SCORE:{score}</p>
             </div>
             <div>
-                <img src="../img/gameover.png" id="end" alt="Game_over" style="display: none">
-                <p  id="Final_Score">Your Score is:{score}</p>
-                <botton type="button" onclick="restart()" id="btn_restart" style="display: none">restart</botton>
-                <button type="button" onclick="btn_back()" id="game_back" style="display: none">back</button>
-                <button type="button" onclick="repository()" id="game_repository" data-JSON="btn_repository" style="display: none">repository</button>
+                <img src="../img/gameover.png" id="end" alt="Game_over" style="display: none;">
+                <p  id="Final_Score"></p>
+                <botton type="button" onclick="restart()" id="btn_restart" style="display: none;">restart</botton>
+                <button type="button" onclick="btn_back()" id="game_back" style="display: none;">back</button>
+                <button type="button" onclick="repository()" id="game_repository" data-JSON="btn_repository" style="display: none;">repository</button>
                 <!-- 游戏结束界面 -->
             </div>
-        </div>
-        <div>
-            <!-- 游戏设置界面 -->
-            
         </div>
     </body>
 </html>
