@@ -4,6 +4,10 @@ const Theme_Default = 1, Theme_Winter = 2, Theme_Fruit = 3, Theme_Weather = 4; /
 var Game_Control = false;  //控制游戏是否开始的变量
 var left = 37, right = 39, speed = 16;//左键，右键，加速键
 var page = 1; //当前页面
+var fruit_theme = [1,2,3,4,5,6,7];
+var tool_num = [1,2,3,4,5,6,7,8,9,10];
+var time_set = 4.5;
+let basket = document.getElementById("basket");
 
 function page_back()
 {

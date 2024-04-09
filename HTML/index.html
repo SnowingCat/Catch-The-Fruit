@@ -32,16 +32,16 @@
             <div class="para">
                 <div id="in_page1" style="display: none">
                     This is a game called Catch The Fruit.
-                    </br>
+                    <br/>
                     In this game , the fruit will dope from the sky.
                     There is a basket on the ground. You need use the basket to catch the fruit.
                     Catch the fruit as many as you can.
                     If your HP == 0 or the time is over , the game is over.
-                    </br>
+                    <br/>
                     Lose fruit or catch bombs will lose your HP.(fruit -5 , bomb -40)
                     You can get some HP by catching fruits or recover HP tool.(fruit +1, HP +20)
                     In Countdown mode , you can catch clock tool to recover countdown time.
-                    </br>
+                    <br/>
                     Good Luck!
                 </div>
                 <div id="in_page2" style="display: none">
@@ -69,7 +69,7 @@
                     Crazy will throw much fruit from the two sides.(10 sec.)
                     Shield can defend a bomb.
                     Speed can make your basket move faster.(10sec.)
-                    Eazy can nake your basket longer or make the fruit and tools smaller.(10sec.)
+                    Easy can make your basket longer or make the fruit and tools smaller.(10sec.)
                 </div>
                 <div id="in_page5" style="display: none">
                     <p class="title">Theme</p>
@@ -79,31 +79,38 @@
             </div>
         </div>
         <div id="setting" style="display: none;">Setting</div>
+        <div class="para">
+            <div id="st_page1" style="display: none">
+                Control Setting
+                <br/>
+            </div>
+        </div>
         <!-- Setting的界面设置 -->
         <div id="mode" style="display: none;">Mode</div>
         <!-- Mode的界面设置 -->
         <button type="button" onclick="btn_back()" id="btn_back" style="display: none;">back</button>
         <!-- Setting Mode Introduction 的返回按钮 -->
         <div>
+            <div>
+                <div id="pause_title" style="display: none;">Pause</div>
+            </div>
+            <div id="pause_control">
+                <p id="back" style="display: none;" onclick="back()">Back</p>
+                <p id="restart" style="display: none;" onclick="restart()">Restart</p>
+                <p id="come_on" style="display: none;" onclick="come_on()">Continue</p>
+            </div>
+        </div>
+        <!-- pause(暂停)界面 -->
+        <div>
             <img src="../img/fruit-default/default_pause.png" id="pause" alt="pause" style="display: none;" onclick="pause()">
             <div>
-                    <div>
-                        <h1 id="pause_title" style="display: none;">Pause</h1>
-                    </div>
-                    <div>
-                        <p id="back" style="display: none;" onclick="back()">Back</p>
-                        <p id="restart" style="display: none;" onclick="restart()">Restart</p>
-                        <p id="come_on" style="display: none;" onclick="come_on()">Continue</p>
-                    </div>
-            </div>
-            <!-- 最上面一段为pause(暂停)界面 -->
-            <div>
                 <!-- 游戏界面 -->
-                <!-- <img src="../img/fruit-default/basket.png" id="basket" style="display: none"> -->
+                <img src="../img/fruit-default/basket_default.png" id="basket" style="display: none" alt="">
+                <div id="pending" style="display: none"></div>
                 <p id="score" style="display: none;">SCORE:{score}</p>
             </div>
             <div>
-                <img src="../img/gameover.png" id="end" alt="Game_over" style="display: none;">
+                <!--<img src="../img/game_over.png" id="end" alt="Game_over" style="display: none;" >-->
                 <p  id="Final_Score"></p>
                 <botton type="button" onclick="restart()" id="btn_restart" style="display: none;">restart</botton>
                 <button type="button" onclick="btn_back()" id="game_back" style="display: none;">back</button>

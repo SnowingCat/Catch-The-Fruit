@@ -26,7 +26,7 @@ body{
 
 #btn_start{
     left: 750px;
-    top: 500px;
+    top: 55%;
     cursor: wait;
 }
 
@@ -76,20 +76,20 @@ body{
     font-size: 16px;
 }
 
-#btn_repository{
-    top: 600px;
-}
-
-#btn_introduction{
-    top: 650px;
+#btn_mode{
+    top: 60%;
 }
 
 #btn_setting{
-    top: 700px;
+    top: 65%;
 }
 
-#btn_mode{
-    top: 550px;
+#btn_introduction{
+    top: 70%;
+}
+
+#btn_repository{
+    top: 75%;
 }
 
 #lg{
@@ -157,10 +157,20 @@ body{
 
 #pause_title{
     position: relative;
+    height: 40px;
+    width: 100px;
     color: white;
-    font-weight: 600;
+    font-size: 50px;
     top: 500px;
     left: 600px;
+}
+
+#pause_control{
+    position: relative;
+    height: 50px;
+    width: 400px;
+    top: 500px;
+    left: 50px;
 }
 
 #back,
@@ -172,18 +182,18 @@ body{
 }
 
 #back{
-    top: 450px;
-    left: 100px;
+    top: 0;
+    left: 0;
 }
 
 #restart{
-    top: 450px;
-    left: 150px;
+    top: 0;
+    left: 100px;
 }
 
 #come_on{
-    top: 450px;
-    left: 200px;
+    top: 0;
+    right: 0;
 }
 
 #basket{
